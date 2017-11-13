@@ -1,4 +1,5 @@
-A [Giter8][g8] template for Scala with Sangria GraphQL!
+A [Giter8][g8] template for Scala with Sangria GraphQL! 
+Used in howtographql.com scala tutorial.
 
 Prerequisites:
 * JDK 8
@@ -7,7 +8,7 @@ Prerequisites:
 Open a console and run the following command to apply this template:
 
 ```bash
-sbt new marioosh/howtographql-scala-sangria.g8
+sbt -Dsbt.version=0.13.16 new marioosh/howtographql-scala-sangria.g8
 ```
 
 This template will prompt for the following parameters. Press `Enter` if the default values suit you:
