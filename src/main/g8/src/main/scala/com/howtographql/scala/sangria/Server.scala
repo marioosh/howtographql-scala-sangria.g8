@@ -28,7 +28,7 @@ object Server extends App {
   }
 
   Http().bindAndHandle(route, "0.0.0.0", PORT)
-  println(s"open a browser with URL: http://localhost:$PORT")
+  println(s"open a browser with URL: http://localhost:\$PORT")
 
 
   def shutdown(): Unit = {
