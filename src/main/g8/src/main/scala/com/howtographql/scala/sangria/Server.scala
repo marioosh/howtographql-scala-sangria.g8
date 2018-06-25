@@ -13,7 +13,7 @@ import scala.language.postfixOps
 
 object Server extends App {
 
-  val PORT = $server_port
+  val PORT = $server_port$
   
   implicit val actorSystem = ActorSystem("graphql-server")
   implicit val materializer = ActorMaterializer()
