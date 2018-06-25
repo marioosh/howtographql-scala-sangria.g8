@@ -13,6 +13,8 @@ import scala.language.postfixOps
 
 object Server extends App {
 
+  val PORT = $server_port
+  
   implicit val actorSystem = ActorSystem("graphql-server")
   implicit val materializer = ActorMaterializer()
 
@@ -25,8 +27,8 @@ object Server extends App {
     complete("Hello GrahpQL Scala!!!")
   }
 
-  Http().bindAndHandle(route, "0.0.0.0", $server_port$)
-  println(s"open a browser with URL: http://localhost:$server_port$")
+  Http().bindAndHandle(route, "0.0.0.0", PORT)
+  println(s"open a browser with URL: http://localhost:$PORT")
 
 
   def shutdown(): Unit = {
